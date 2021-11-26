@@ -1,0 +1,251 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{svg}
+\usepackage{tabulary,array} 
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% \usepackage{geometry}
+%  \geometry{
+%  top=25mm,
+%  left=25mm,
+%  right=25mm,
+%  bottom=25mm
+% }
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\DeclareFontFamily{U}{fontawesome1}{}
+\DeclareFontShape{U}{fontawesome1}{m}{n}{<->FontAwesome--fontawesomeone}{}
+\DeclareFontFamily{U}{fontawesome2}{}
+\DeclareFontShape{U}{fontawesome2}{m}{n}{<->FontAwesome--fontawesometwo}{}
+\DeclareFontFamily{U}{fontawesome3}{}
+\DeclareFontShape{U}{fontawesome3}{m}{n}{<->FontAwesome--fontawesomethree}{}
+\DeclareRobustCommand{\FAone}{\usefont{U}{fontawesome1}{m}{n}}
+\DeclareRobustCommand{\FAtwo}{\usefont{U}{fontawesome2}{m}{n}}
+\DeclareRobustCommand{\FAthree}{\usefont{U}{fontawesome3}{m}{n}}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    \vspace{9pt}
+    {\Huge \scshape \color{MidnightBlue} Nikhil Thakur} \\ \vspace{7pt}
+    \href{https://www.linkedin.com/in/nikhil-thakur-98237b182/}{\raisebox{-0.2\height}{\faLinkedin}\ {Linkedin}}  ~
+    \href{https://github.com/itgitnit}{\raisebox{-0.2\height}{\faGithub}\ {Github}} ~ 
+    \href{https://techeducation2210.blogspot.com/}{\raisebox{-0.2\height} {\faBlogger}\ {Blogger}} ~
+    \vspace{-7pt}
+\end{center}
+
+\begin{center}
+    \small \raisebox{-0.1\height}{\includesvg[width=10pt]{phone}}\ +91 6388417115 ~ 
+    \href{mailto:thakurnikhil2210@gmail.com}{\raisebox{-0.2\height}{\normalsize \faEnvelope}\  {thakurnikhil2210@gmail.com}} ~
+    \small \raisebox{-0.1\height}{\normalsize \faMapMarker}\ {Prayagraj, Uttar Pradesh, India} ~
+    \vspace{4pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{\color{MidnightBlue}EDUCATION}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Technology (B. Tech.)}{2018 - 2022}
+      {Computer Science and Engineering (CSE)\vspace{6pt}}{\textbf{}}
+      {\textit{Jabalpur Engineering College, Jabalpur}}
+    \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{\color{MidnightBlue}EXPERIENCE}
+\vspace{2pt}
+  \resumeSubHeadingListStart
+
+    
+
+    \resumeSubheading
+      {Infoware Technologies \href{https://drive.google.com/file/d/17kus_NVatpwAeqGKcgRYU8HIzkO86oFO/view?usp=sharing}{\textbf{\color{NavyBlue} [Certificate]}}}{June 2021 -- Sept 2021}
+      {React Developer Intern}{}
+      \resumeItemListStart
+        \resumeItem{Assisted in development of the front end of a desktop and mobile application using React.}
+        \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web apps.}
+        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+        \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{\scshape \color{MidnightBlue}PROJECTS}
+  \vspace{0pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{MDB 5 Vs Code Snippet} $|$ \href{https://marketplace.visualstudio.com/items?itemName=NikhilThakur.mdb5snippets}{\textbf{\color{NavyBlue} Live}} \vspace{7pt}}{ May 2021 – June 2021}
+          \resumeItemListStart
+            \resumeItem{Simple Material Design Bootstrap 5 Snippet. It adds useful snippets of the MDB 5 components to Visual Studio Code.}
+            \resumeItem{\textbf{Impact:} Currently, it has 500+ installs and is increasing day by day.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+        \resumeProjectHeading
+          {\textbf{My Social Media} $|$ \href{https://chrome.google.com/webstore/detail/my-social-media/fhigbmkegbglbaklgncnckbafnplnana}{\textbf{\color{NavyBlue} Live}}\vspace{7pt}}{June 2021 – July 2021}
+          \resumeItemListStart
+            \resumeItem{A Google Chrome extension. With the help of this extension, anyone can access his/her social media accounts with just a click on icons.}
+          \resumeItemListEnd 
+          \vspace{-12pt}
+        \resumeProjectHeading
+          {\textbf{WhoShares} $|$ \href{https://itgitnit.github.io/whoShares/}{\textbf{\color{NavyBlue} Live}} \vspace{7pt}}{Feb 2021 – Apr 2021}
+          {\textit{React Js, HTML/CSS, Bootstrap} \vspace{-6pt}}
+          \resumeItemListStart
+            \resumeItem{Guided a \textbf{team of 3 developers} and created a \textbf{File Sharing Platform} using \textbf{React JS} to help college students find all study-related material \textbf{in one place}.}
+            \resumeItem{Added features such as \textbf{Email Activation, Upvoting/Downvoting and Filtering Requests and Files}.}
+          \resumeItemListEnd 
+          \vspace{-12pt}
+        \resumeProjectHeading
+          {\textbf{Info Channel App} $|$ \href{https://info-channel-1ce7c.web.app/}{\textbf{\color{NavyBlue} Live}} \vspace{7pt}}{Aug 2021 – Oct 2021}
+          {\textit{HTML/CSS , React Js, Styled Components, Firebase } \vspace{-6pt}}
+          \resumeItemListStart
+            \resumeItem{This app organizes conversations into dedicated spaces.}
+            \resumeItem{We can create channels for any project, topic, or team.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{\scshape \color{MidnightBlue}TECHNICAL SKILLS}
+\vspace{2pt}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+        \setlength\itemsep{-3pt}
+        \item{\textbf{Programming Languages: }{C/C++, JavaScript, Php}}
+        \item{\textbf{Technologies/Frameworks: }{React.js, Express.js, Bootstrap}}
+        \item{\textbf{Databases: }{MySQL, MongoDB}}
+        \item{\textbf{General: }{Data Structures, Algorithms, Object Oriented Programming}}
+        \item{\textbf{Other: }{Git, Github, API, Scripting, Linux, Heroku, Postman}}
+    }
+ \end{itemize}
+ \vspace{-11pt}
+
+
+%-----------ADDITIONAL---------------
+\section{\color{MidnightBlue} ADDITIONAL}
+\vspace{2pt}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{
+            \setlength\itemsep{-3pt}
+            \item{\textbf{Courses/Certifications}{I have completed six weeks of online summer training on React Js. The training consisted of advanced javascript, react js, redux, and firebase. And also developed a chat application and payment gateway.}}
+            \item{\textbf{Languages}{: English (Professional Working Proficiency), Hindi (Native Proficiency).}}
+        }    
+    
+ \end{itemize}
+
+\end{document}
